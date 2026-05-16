@@ -1,7 +1,5 @@
 # Portafolio Personal 3D
 
-Portafolio web personal con elementos interactivos en 3D, construido con HTML, CSS, JavaScript y Three.js.
-
 > Para la documentación técnica completa (arquitectura, roadmap, decisiones técnicas), ver [DOCUMENTACION.md](DOCUMENTACION.md).
 
 ---
@@ -13,19 +11,21 @@ Portafolio web personal con elementos interactivos en 3D, construido con HTML, C
 - [Stack tecnológico](#stack-tecnológico)
 - [Estructura del proyecto](#estructura-del-proyecto)
 - [Requisitos previos](#requisitos-previos)
-- [Instalación](#instalación)
 - [Uso](#uso)
 - [Despliegue](#despliegue)
 - [Roadmap](#roadmap)
 - [Contribución](#contribución)
-- [Licencia](#licencia)
 - [Contacto](#contacto)
 
 ---
 
 ## Descripción
 
-Sitio web estático que presenta perfil profesional, proyectos, habilidades y medios de contacto. Incorpora una escena 3D interactiva como diferenciador visual, renderizada con Three.js sobre WebGL.
+Este proyecto corresponde a mi portafolio personal, desarrollado como un sitio web estático diseñado para presentar mi perfil profesional y personal, experiencia, proyectos, habilidades técnicas y medios de contacto.
+
+Más que solo un portafolio, este proyecto representa parte de mi camino como desarrolladora, reuniendo lo esencial de una profesional con casi 2 años de experiencia en desarrollo de software, además de reflejar mi interés por seguir aprendiendo, construir proyectos propios y fortalecer continuamente mis habilidades técnicas.
+
+También es un proyecto realizado con mucho cariño y dedicación, como una forma de agradecer a todas las personas que han sido parte de mi proceso de aprendizaje hasta hoy: amigos, profesores, compañeros de trabajo y familia, quienes de una u otra forma han contribuido a mi crecimiento profesional y personal.
 
 ---
 
@@ -49,7 +49,6 @@ Sitio web estático que presenta perfil profesional, proyectos, habilidades y me
 | Estilos      | CSS3                    |
 | Lógica       | JavaScript (Vanilla JS) |
 | Motor 3D     | Three.js (WebGL)        |
-| Modelado 3D  | Blender (`.glb`)        |
 | Versionado   | Git + GitHub            |
 | Hosting      | Netlify (alt. GitHub Pages) |
 | Editor       | Visual Studio Code      |
@@ -73,7 +72,6 @@ portafolio-personal/
 │   ├── images/
 │   ├── icons/
 │   └── models/
-│       └── portfolio-object.glb
 │
 ├── libs/
 │   └── three.js
@@ -87,34 +85,8 @@ portafolio-personal/
 ## Requisitos previos
 
 - Navegador moderno con soporte WebGL (Chrome, Firefox, Edge, Safari).
-- Git instalado (para clonar el repositorio).
-- Opcional: un servidor local (Live Server, `http-server`, etc.) para evitar errores de CORS al cargar modelos `.glb`.
-
----
-
-## Instalación
-
-1. Clonar el repositorio:
-
-   ```bash
-   git clone https://github.com/<usuario>/portafolio-personal.git
-   cd portafolio-personal
-   ```
-
-2. (Opcional) Iniciar un servidor local:
-
-   - Con la extensión **Live Server** de VS Code: clic derecho sobre `index.html` → *Open with Live Server*.
-   - O con Node.js:
-
-     ```bash
-     npx http-server .
-     ```
-
-3. Abrir en el navegador:
-
-   ```text
-   http://localhost:8080
-   ```
+- Git instalado.
+- Opcional: un servidor local (Live Server, `http-server`, etc.) para evitar errores de CORS al cargar assets.
 
 ---
 
@@ -150,10 +122,9 @@ No se requiere build ni instalación de dependencias: es un sitio estático.
 
 - **Fase 1** — Fundamentos frontend (HTML, CSS, JS, responsive).
 - **Fase 2** — Integración de Three.js (escena, cámara, iluminación).
-- **Fase 3** — Carga de modelos `.glb` y animaciones.
-- **Fase 4** — Modelado propio en Blender.
+- **Fase 3** — Carga de modelos e integración de animaciones.
 
-Mejoras previstas para la **v2**: migración a React, TypeScript, GSAP, backend propio, formulario funcional, CMS, integración de IA, analytics. Detalle en [DOCUMENTACION.md](DOCUMENTACION.md#evolución-futura-v2).
+Mejoras previstas para la **v2**: migración a React, TypeScript, GSAP, backend propio, formulario funcional, CMS, integración de IA, analytics. Detalle en [DOCUMENTACION.md](DOCUMENTACION.md).
 
 ---
 
@@ -167,27 +138,9 @@ Este es un proyecto personal de aprendizaje, pero las sugerencias son bienvenida
 4. Push a la rama: `git push origin feature/mi-mejora`.
 5. Abrir un Pull Request.
 
-### Ramas del proyecto
-
-```text
-main
-development
-feature/layout
-feature/three-scene
-feature/model-loader
-feature/blender-assets
-```
-
----
-
-## Licencia
-
-Este proyecto se distribuye bajo licencia **MIT**. Ver el archivo `LICENSE` para más información.
-
 ---
 
 ## Contacto
 
-- **Autora:** Elisa Santibáñez
-- **Email:** elisa.santibanez@geti.cl
-- **GitHub:** [@elisantidev](https://github.com/elisantidev)
+- **Email:** elisa.asp94@gmail.com
+- **GitHub:** [@Elisantib](https://github.com/Elisantib)
