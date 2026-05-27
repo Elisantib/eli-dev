@@ -234,6 +234,14 @@ body {
     width: 120px;
 }
 
+.hero__illustration img,
+.about__illustration img,
+.contact__illustration img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* ===== LINK ARROW ===== */
 .link-arrow {
     color: #7c3aed;
