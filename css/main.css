@@ -95,6 +95,14 @@ body {
 .section--hero {
     min-height: 300px;
     position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
+    column-gap: 24px;
+    align-items: center;
+}
+
+.section--hero > :not(.hero__illustration) {
+    grid-column: 1;
 }
 
 .highlight {
@@ -125,8 +133,12 @@ body {
     border: 2px dashed #a78bfa;
     padding: 24px;
     text-align: center;
-    margin-top: 24px;
-    width: 200px;
+    margin-top: 0;
+    width: 100%;
+    max-width: 360px;
+    grid-column: 2;
+    grid-row: 1 / -1;
+    justify-self: end;
 }
 
 /* ===== SOBRE MÍ ===== */
@@ -321,6 +333,11 @@ body {
         padding: 18px;
     }
 
+    .section--hero {
+        grid-template-columns: minmax(0, 1fr) minmax(180px, 260px);
+        column-gap: 16px;
+    }
+
     .section__header {
         flex-direction: column;
         align-items: flex-start;
@@ -337,7 +354,7 @@ body {
     .contact__illustration,
     .hero__illustration {
         width: 100%;
-        max-width: 240px;
+        max-width: 260px;
         margin-left: 0;
     }
 
@@ -378,6 +395,12 @@ body {
 
     .section {
         padding: 14px;
+    }
+
+    .section--hero {
+        grid-template-columns: minmax(0, 1fr) minmax(130px, 180px);
+        column-gap: 12px;
+        align-items: start;
     }
 
     .contact__links {
